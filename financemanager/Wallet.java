@@ -3,8 +3,8 @@ package financemanager;
 import java.util.*;
 
 public class Wallet {
-    private double totalIncome; // Новый атрибут для общего дохода
-    private double balance; // Текущий баланс
+    private double totalIncome; 
+    private double balance; 
     private List<Transaction> transactions;
     private Map<String, BudgetCategory> budgetCategories;
 
@@ -17,7 +17,7 @@ public class Wallet {
 
     public void setIncome(double income) {
         this.totalIncome = income;
-        this.balance = income; // Устанавливаем баланс равным доходу
+        this.balance = income; 
         System.out.println("Общий доход установлен: " + income);
     }
 
@@ -47,7 +47,7 @@ public class Wallet {
             System.out.println(t);
         }
 
-        System.out.println("Бюджеты:");
+        System.out.println("Бюджет:");
         for (BudgetCategory category : budgetCategories.values()) {
             System.out.println(category);
         }
